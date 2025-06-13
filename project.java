@@ -30,7 +30,7 @@ public class project implements ActionListener {
 	
 	//GUI creation
 	public project(){
-	
+		//making the window
 		frame = new JFrame();
 		
 		title = new JLabel("My To-Do List");
@@ -45,6 +45,7 @@ public class project implements ActionListener {
 		panel = new JPanel();
 		panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
 		panel.setLayout(new GridLayout(0, 1));
+		//adding elements
 		panel.add(title);
 		panel.add(taskLabel);
 		panel.add(addButton);
@@ -55,16 +56,15 @@ public class project implements ActionListener {
 		frame.pack();
 		frame.setVisible(true);
 	}
-	
-	
-   public static void main(String args[]){
-	   project proj = new project();
-	   
-   }
+
+	//instantiates the project so it can run
+	public static void main(String args[]){
+		project proj = new project();
+	}
 
    
-@Override
-// method to execute when buttons are pressed
+	@Override
+	// method to execute when buttons are pressed
 	public void actionPerformed(ActionEvent e) {
 	// when addButton (Add new task) is clicked
 	 	if (e.getSource()==addButton)

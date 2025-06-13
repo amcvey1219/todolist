@@ -1,7 +1,7 @@
 # To Do List
 My to-do list project, created using Java/Eclipse, is a to-do list application. 
 It allows you to add, edit, and remove tasks and keeps track of the number of tasks you have.
-//screenshots
+
 <img src="Screenshot 2024-10-29 114214.png">
 <img src="Screenshot 2024-10-29 114250.png">
 
